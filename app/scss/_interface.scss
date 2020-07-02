@@ -26,7 +26,15 @@ a {
   outline: none;
 }
 
-// body {}
+/*переменные*/
+
+body {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #1E252C;
+}
 
 .container {
   width: 100%;
@@ -39,4 +47,62 @@ a {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #393C56;
+  margin: 50px 0;
+}
+
+.darckblue {
+  background: #386495;
+}
+
+.lightblue {
+  background: #E6F2FF;
+}
+
+.btn {
+  &-bg {
+    font-weight: 600;
+    line-height: 19px;
+    padding: 15px 40px;
+    color: #FFFFFF;
+    background: linear-gradient(269.69deg, #FBB03B 0.02%, #FF9431 99.93%);
+    border-radius: 30px;
+
+    &:hover {
+      background: linear-gradient(269.69deg, #FF9431 0.02%, #FF9431 99.93%);
+      box-shadow: 4px 4px 20px #FBB03B;
+    }
+  }
+}
+
+.btn {
+  &-round {
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #FBB03B 0%, #FF9431 100%);
+    box-shadow: 4px 4px 40px #FBB03B;
+
+    :hover {
+      background: #FF9431;
+      box-shadow: 4px 4px 40px #FBB03B;
+    }
+  }
 }
